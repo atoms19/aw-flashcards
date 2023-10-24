@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=Edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+<script src="https://raw.githack.com/atoms19/dominity.js/main/dist/dominity5.min.js"></script>
+
+  <title>aw-flashcards</title>
+  <link rel="stylesheet" href="style.css">
+  <script src=""></script>
+</head>
+<body>
+ <section id="card-screen">
+ <h1>flash cards</h1>
+ <p>remember stuff easily </p>
+ <button class="menu-btn">
+   <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--secondary)" class="bi bi-list" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M2.5 12a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5zm0-4a.5.5 0 0 1 .5-.5h10a.5.5 0 0 1 0 1H3a.5.5 0 0 1-.5-.5z"/>
+</svg>
+ </button>
+ 
+ <div class="side-bar">
+  
+ </div>
+ <div class="card-container">
+    </div>
+    <div class="btn-container">
+       <button class="block-btn" id="new-card-btn">
+         <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="currentColor" class="bi bi-box-arrow-right" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M10 12.5a.5.5 0 0 1-.5.5h-8a.5.5 0 0 1-.5-.5v-9a.5.5 0 0 1 .5-.5h8a.5.5 0 0 1 .5.5v2a.5.5 0 0 0 1 0v-2A1.5 1.5 0 0 0 9.5 2h-8A1.5 1.5 0 0 0 0 3.5v9A1.5 1.5 0 0 0 1.5 14h8a1.5 1.5 0 0 0 1.5-1.5v-2a.5.5 0 0 0-1 0v2z"/>
+  <path fill-rule="evenodd" d="M15.854 8.354a.5.5 0 0 0 0-.708l-3-3a.5.5 0 0 0-.708.708L14.293 7.5H5.5a.5.5 0 0 0 0 1h8.793l-2.147 2.146a.5.5 0 0 0 .708.708l3-3z"/>
+</svg>
+       </button>
+
+    </div>
+<!-- actual card structure
+
+
+ <div class="card">
+   <div class="question">why did the chicken cross the road</div>
+   <div class="answer natural-rotator hide">
+     to get to the coop
+   </div>-->
+ 
+ 
+
+ <button class="floating-btn" id="add-btn">
+   <svg xmlns="http://www.w3.org/2000/svg" width="32" height="32" fill="var(--primary)" class="bi bi-plus" viewBox="0 0 16 16">
+  <path d="M8 4a.5.5 0 0 1 .5.5v3h3a.5.5 0 0 1 0 1h-3v3a.5.5 0 0 1-1 0v-3h-3a.5.5 0 0 1 0-1h3v-3A.5.5 0 0 1 8 4z"/>
+</svg>
+ </button>
+ </section>
+ <section id="new-card-screen" class="hide">
+   <button class="back-btn">
+     <svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" fill="var(--secondary)" class="bi bi-arrow-left" viewBox="0 0 16 16">
+  <path fill-rule="evenodd" d="M15 8a.5.5 0 0 0-.5-.5H2.707l3.147-3.146a.5.5 0 1 0-.708-.708l-4 4a.5.5 0 0 0 0 .708l4 4a.5.5 0 0 0 .708-.708L2.707 8.5H14.5A.5.5 0 0 0 15 8z"/>
+</svg>
+   </button>
+   <h1>make flashcard</h1>
+   <p>create a new flash card</p>
+   <div class="container">
+   <input  class=inp type=text placeholder="enter question">
+   <input class=inp type="text" placeholder="enter answer">
+   <input class=inp type="text" placeholder="enter group">
+   <button class="addcard-btn">add card</button>
+   </div>
+ </section>
+  <script src="main.js"></script>
+</body>
+</html>

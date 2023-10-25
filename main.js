@@ -2,7 +2,7 @@ flashCardsStorage={
  
 }
 function loaddata(){
-flashCardsStorage=JSON.parse(localStorage.getItem('flashCardData'))||{group:[['welcomento flash cards ','press + button to add new flashcard']]}
+flashCardsStorage=JSON.parse(localStorage.getItem('flashCardData'))||{group:[['welcome to flash cards ','press + button to add new flashcard']]}
 
 }
 loaddata()

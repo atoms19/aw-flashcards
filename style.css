@@ -129,8 +129,7 @@ background:var(--white);
   justify-content:center;
   align-items:center;
   color:var(--text);
-  box-shadow: -10px -10px 15px var(--secondaryLight),
-            10px 10px 15px rgba(70,70,70,0.12);
+  box-shado:10px 10px 15px rgba(70,70,70,0.12);
   border-radius: 90px;
 
 }

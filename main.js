@@ -13,6 +13,14 @@ class FlashCard{
     this.answer=answer
   }
   display(){
+  this.card=el('div',{class:'card'}).
+               el('div',this.question,{class:'card'}).$end().
+               el('div',this.answer,{class:'answer hide natural-rotator'}).$end().
+             onClick(this.flip)
+
+   $el('.card-container').el(this.card)
+
+   
     this.card=create('div')
     this.card.addClass('card')
     this.ques=create('div')
@@ -31,6 +39,16 @@ class FlashCard{
    })
   }
   flip(){
+
+   this.card.class('anim').toggleClass('isanswer').child(0).toggleHide().
+child(1).toggleHide()
+
+    setTimeout(()=>{
+    this.card.removeClass('anim')
+this.card.child(0).toggleClass('natural-rotator')
+this.card.child(1).toggleClass('natural-rotator')
+  },500)
+
     this.card.addClass('anim')
   this.card.toggleClass('isanswer')
   this.ques.toggleClass('hide')
